@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="@dimen/padding_left"
+    >
+
+<CheckBox
+    android:id="@+id/child_cb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    />
+
+
+ <ImageView
+     android:id="@+id/child_img"
+     android:layout_width="80dp"
+     android:layout_height="80dp"
+     android:src="@mipmap/ic_launcher"
+     android:scaleType="centerCrop"
+     />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/child_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品标题"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/child_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥0.0"
+        android:layout_marginTop="10dp"
+        />
+
+    </LinearLayout>
+
+
+    <com.bway.cart_shopping.MyAddSubView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myadd_sub"
+        android:layout_marginRight="10dp"
+        >
+    </com.bway.cart_shopping.MyAddSubView>
+</LinearLayout>
